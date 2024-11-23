@@ -1,5 +1,6 @@
 import "./style.css";
 import "./main.css";
+import font from "./assets/w95fa.woff";
 import ball from "./assets/ball.png";
 
 const zone: number = 20;
@@ -16,6 +17,10 @@ function updateCount() {
 
 updateCount();
 counter.id = "counter";
+
+const fontface = new FontFace("win", `url(${font})`);
+document.fonts.add(fontface);
+document.body.style.fontFamily = "win";
 
 document.body.appendChild(counter);
 
