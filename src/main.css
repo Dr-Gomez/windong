@@ -1,0 +1,33 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#dongball {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  animation: spin linear 1s infinite;
+  user-select: none;
+}
+
+#counter {
+  width: 100%;
+  height: 10vmin;
+  font-size: 10vmin;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  text-align: center;
+}
